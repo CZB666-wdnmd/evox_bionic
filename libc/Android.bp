@@ -2136,6 +2136,7 @@ cc_defaults {
     static_libs: ["libasync_safe"],
     apex_available: [
         "//apex_available:platform",
+        "com.android.btservices",
     ],
 
     static: {
@@ -2172,10 +2173,6 @@ cc_defaults {
             version_script: ":libstdc++.x86_64.map",
         },
     },
-    apex_available: [
-        "//apex_available:platform",
-        "com.android.btservices",
-    ],
     min_sdk_version: "Tiramisu",
 }
 
